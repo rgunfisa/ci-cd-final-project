@@ -75,4 +75,4 @@ spec:
       workingDir: $(workspaces.source.path)
       script: |
         pip install --no-cache-dir flake8
-        flake8 $(params.args)
+        flake8 $(params.args[*])
